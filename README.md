@@ -1,4 +1,4 @@
-Install nodejs 
+Install nodejs. Once nodejs is installed do the following, 
 <br>
 Open terminal and run `npm install`
 <br>
