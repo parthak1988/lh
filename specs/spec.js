@@ -8,12 +8,12 @@ describe('Protractor Demo App', function() {
     homepage = new HomePage();
     specpage = new SpecPage();
     apppage = new ApplicationPage();
-    
     browser.waitForAngularEnabled(false);
+    browser.get(browser.params.url);
+    browser.manage().addCookie({name:'iceiceab_disabled', value: 'true'});
   });
 
   it('should have a title', function() {
-    browser.get(browser.params.url);
     homepage.clickFindYourRate();
     specpage.selectPropertiesSold('1-3');
     specpage.selectPurchaseProcess('Identified a Property');
